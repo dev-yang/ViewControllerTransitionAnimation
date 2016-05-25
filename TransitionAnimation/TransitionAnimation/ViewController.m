@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -23,5 +24,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)modalAction:(id)sender {
+    SecondViewController *svc = [[SecondViewController alloc] init];
+    svc.title = @"Modal";
+    svc.dataArr = @[@"CoverVertical", @"FlipHorizontal", @"CrossDissolve", @"PartialCurl"];
+    [self.navigationController pushViewController:svc animated:NO];
+}
+
+- (IBAction)navigationAction:(id)sender {
+    SecondViewController *svc = [[SecondViewController alloc] init];
+    svc.title = @"Navigation";
+    svc.dataArr = @[kCATransitionMoveIn, kCATransitionFade, kCATransitionPush, kCATransitionReveal, @"cube", @"pageCurl",@"cameraIrisHollowOpen"];
+    [self.navigationController pushViewController:svc animated:NO];
+
+}
+
 
 @end

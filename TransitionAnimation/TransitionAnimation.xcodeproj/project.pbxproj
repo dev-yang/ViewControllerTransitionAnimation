@@ -15,6 +15,8 @@
 		1180ACD81CF4470100CA9169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1180ACD61CF4470100CA9169 /* LaunchScreen.storyboard */; };
 		1180ACE31CF4470200CA9169 /* TransitionAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1180ACE21CF4470200CA9169 /* TransitionAnimationTests.m */; };
 		1180ACEE1CF4470200CA9169 /* TransitionAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1180ACED1CF4470200CA9169 /* TransitionAnimationUITests.m */; };
+		1180ACFD1CF44C1C00CA9169 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1180ACFC1CF44C1C00CA9169 /* SecondViewController.m */; };
+		1180AD001CF44EE900CA9169 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1180ACFF1CF44EE900CA9169 /* ThreeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		1180ACE91CF4470200CA9169 /* TransitionAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1180ACED1CF4470200CA9169 /* TransitionAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationUITests.m; sourceTree = "<group>"; };
 		1180ACEF1CF4470200CA9169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1180ACFB1CF44C1C00CA9169 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1180ACFC1CF44C1C00CA9169 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1180ACFE1CF44EE900CA9169 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		1180ACFF1CF44EE900CA9169 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				1180ACCC1CF4470100CA9169 /* AppDelegate.m */,
 				1180ACCE1CF4470100CA9169 /* ViewController.h */,
 				1180ACCF1CF4470100CA9169 /* ViewController.m */,
+				1180ACFB1CF44C1C00CA9169 /* SecondViewController.h */,
+				1180ACFC1CF44C1C00CA9169 /* SecondViewController.m */,
+				1180ACFE1CF44EE900CA9169 /* ThreeViewController.h */,
+				1180ACFF1CF44EE900CA9169 /* ThreeViewController.m */,
 				1180ACD11CF4470100CA9169 /* Main.storyboard */,
 				1180ACD41CF4470100CA9169 /* Assets.xcassets */,
 				1180ACD61CF4470100CA9169 /* LaunchScreen.storyboard */,
@@ -270,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1180ACFD1CF44C1C00CA9169 /* SecondViewController.m in Sources */,
 				1180ACD01CF4470100CA9169 /* ViewController.m in Sources */,
 				1180ACCD1CF4470100CA9169 /* AppDelegate.m in Sources */,
 				1180ACCA1CF4470100CA9169 /* main.m in Sources */,
+				1180AD001CF44EE900CA9169 /* ThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +510,7 @@
 				1180ACF41CF4470200CA9169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1180ACF51CF4470200CA9169 /* Build configuration list for PBXNativeTarget "TransitionAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				1180ACF71CF4470200CA9169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1180ACF81CF4470200CA9169 /* Build configuration list for PBXNativeTarget "TransitionAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				1180ACFA1CF4470200CA9169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
