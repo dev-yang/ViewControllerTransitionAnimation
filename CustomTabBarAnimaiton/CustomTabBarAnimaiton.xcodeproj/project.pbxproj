@@ -15,6 +15,8 @@
 		11356DFA1CF6A90400CFA112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11356DF81CF6A90400CFA112 /* LaunchScreen.storyboard */; };
 		11356E051CF6A90400CFA112 /* CustomTabBarAnimaitonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356E041CF6A90400CFA112 /* CustomTabBarAnimaitonTests.m */; };
 		11356E101CF6A90400CFA112 /* CustomTabBarAnimaitonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356E0F1CF6A90400CFA112 /* CustomTabBarAnimaitonUITests.m */; };
+		11356E1F1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356E1E1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m */; };
+		11356E221CF6CCA700CFA112 /* CustomAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356E211CF6CCA700CFA112 /* CustomAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		11356E0B1CF6A90400CFA112 /* CustomTabBarAnimaitonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTabBarAnimaitonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11356E0F1CF6A90400CFA112 /* CustomTabBarAnimaitonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarAnimaitonUITests.m; sourceTree = "<group>"; };
 		11356E111CF6A90400CFA112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11356E1D1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarAnimationDelegate.h; sourceTree = "<group>"; };
+		11356E1E1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarAnimationDelegate.m; sourceTree = "<group>"; };
+		11356E201CF6CCA700CFA112 /* CustomAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimator.h; sourceTree = "<group>"; };
+		11356E211CF6CCA700CFA112 /* CustomAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 			children = (
 				11356DED1CF6A90400CFA112 /* AppDelegate.h */,
 				11356DEE1CF6A90400CFA112 /* AppDelegate.m */,
+				11356E1D1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.h */,
+				11356E1E1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m */,
+				11356E201CF6CCA700CFA112 /* CustomAnimator.h */,
+				11356E211CF6CCA700CFA112 /* CustomAnimator.m */,
 				11356DF01CF6A90400CFA112 /* ViewController.h */,
 				11356DF11CF6A90400CFA112 /* ViewController.m */,
 				11356DF31CF6A90400CFA112 /* Main.storyboard */,
@@ -270,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11356E221CF6CCA700CFA112 /* CustomAnimator.m in Sources */,
+				11356E1F1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m in Sources */,
 				11356DF21CF6A90400CFA112 /* ViewController.m in Sources */,
 				11356DEF1CF6A90400CFA112 /* AppDelegate.m in Sources */,
 				11356DEC1CF6A90400CFA112 /* main.m in Sources */,
@@ -498,6 +510,7 @@
 				11356E161CF6A90400CFA112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11356E171CF6A90400CFA112 /* Build configuration list for PBXNativeTarget "CustomTabBarAnimaitonTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				11356E191CF6A90400CFA112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11356E1A1CF6A90400CFA112 /* Build configuration list for PBXNativeTarget "CustomTabBarAnimaitonUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				11356E1C1CF6A90400CFA112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
