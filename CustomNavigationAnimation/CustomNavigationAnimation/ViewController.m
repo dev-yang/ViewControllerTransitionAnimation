@@ -8,11 +8,9 @@
 
 #import "ViewController.h"
 #import "CustomNavigationDelegate.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()<UINavigationControllerDelegate>
-{
-    CustomNavigationDelegate *customNavigationDelegate;
-}
 @end
 
 @implementation ViewController
@@ -20,8 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    customNavigationDelegate = [[CustomNavigationDelegate alloc]init];
-    self.navigationController.delegate = customNavigationDelegate;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -33,7 +29,7 @@
 - (IBAction)push:(id)sender {
 //    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 //    UIViewController *svc =  [storyboard instantiateViewControllerWithIdentifier:@"svc"];
-    UIViewController *svc = [[UIViewController alloc] init];
+    SecondViewController *svc = [[SecondViewController alloc] init];
     svc.view.backgroundColor = [UIColor orangeColor];
     [self.navigationController pushViewController:svc animated:YES];
 }

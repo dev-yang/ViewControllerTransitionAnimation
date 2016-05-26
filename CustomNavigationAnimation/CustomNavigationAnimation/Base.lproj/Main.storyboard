@@ -15,10 +15,12 @@
                         <color key="barTintColor" red="0.97647058823529409" green="0.28627450980392155" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
+                        <outlet property="delegate" destination="qem-qj-jWZ" id="fa8-pm-Qzd"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="C9M-rM-Hfo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfa-xJ-X4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="qem-qj-jWZ" customClass="CustomNavigationDelegate"/>
             </objects>
             <point key="canvasLocation" x="-214" y="-329"/>
         </scene>
@@ -56,25 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="466" y="-329"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="4j2-nx-PXX">
-            <objects>
-                <viewController storyboardIdentifier="svc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ODJ-lZ-pIx" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oYo-YF-4Lu"/>
-                        <viewControllerLayoutGuide type="bottom" id="bga-nt-hFg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pNi-cJ-aqM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AHz-qY-F2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1119" y="-329"/>
+            <point key="canvasLocation" x="795" y="-407"/>
         </scene>
     </scenes>
 </document>

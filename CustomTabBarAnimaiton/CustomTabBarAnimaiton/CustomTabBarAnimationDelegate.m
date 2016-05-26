@@ -18,6 +18,5 @@
     }else {
         return [[CustomAnimator alloc]initWithPresenting:NO];
     }
-    
 }
 @end

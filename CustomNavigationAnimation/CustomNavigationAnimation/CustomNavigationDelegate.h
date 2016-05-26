@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @interface CustomNavigationDelegate : NSObject<UINavigationControllerDelegate>
-
+@property (nonatomic, assign) BOOL isInteractive;
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition *interactiveTransition;
 @end
