@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "CustomTabBarAnimationDelegate.h"
 #import "CustomAnimator.h"
+#import "CustomTabBarController.h"
 
 @interface AppDelegate ()
 {
@@ -21,19 +22,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor =[UIColor whiteColor];
-    [self.window makeKeyWindow];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UITabBarController *tbc = (UITabBarController *)[storyboard instantiateViewControllerWithIdentifier:@"tabbar"];
-    customDelegate = [[CustomTabBarAnimationDelegate alloc]init];
-    tbc.delegate = customDelegate;
-    self.window.rootViewController = tbc;
-    [self.window addSubview:tbc.view];
-
-    
-
-    
     return YES;
 }
 

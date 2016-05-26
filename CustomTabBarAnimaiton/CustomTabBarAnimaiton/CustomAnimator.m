@@ -65,11 +65,11 @@
         }
 
     } completion:^(BOOL finished) {
-        if (!self.isPresenting) {
+        BOOL wasCancelled = [transitionContext transitionWasCancelled];
+        if (!self.isPresenting && !wasCancelled) {
             [fromView
              removeFromSuperview];
         }
-        BOOL wasCancelled = [transitionContext transitionWasCancelled];
         [transitionContext completeTransition:!wasCancelled];
 
     }];

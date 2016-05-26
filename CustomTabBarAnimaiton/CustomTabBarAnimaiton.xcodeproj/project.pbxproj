@@ -17,6 +17,7 @@
 		11356E101CF6A90400CFA112 /* CustomTabBarAnimaitonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356E0F1CF6A90400CFA112 /* CustomTabBarAnimaitonUITests.m */; };
 		11356E1F1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356E1E1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m */; };
 		11356E221CF6CCA700CFA112 /* CustomAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356E211CF6CCA700CFA112 /* CustomAnimator.m */; };
+		11356E281CF71BC600CFA112 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11356E271CF71BC600CFA112 /* CustomTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		11356E1E1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarAnimationDelegate.m; sourceTree = "<group>"; };
 		11356E201CF6CCA700CFA112 /* CustomAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimator.h; sourceTree = "<group>"; };
 		11356E211CF6CCA700CFA112 /* CustomAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimator.m; sourceTree = "<group>"; };
+		11356E261CF71BC600CFA112 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		11356E271CF71BC600CFA112 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				11356DED1CF6A90400CFA112 /* AppDelegate.h */,
 				11356DEE1CF6A90400CFA112 /* AppDelegate.m */,
+				11356E261CF71BC600CFA112 /* CustomTabBarController.h */,
+				11356E271CF71BC600CFA112 /* CustomTabBarController.m */,
 				11356E1D1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.h */,
 				11356E1E1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m */,
 				11356E201CF6CCA700CFA112 /* CustomAnimator.h */,
@@ -282,6 +287,7 @@
 			files = (
 				11356E221CF6CCA700CFA112 /* CustomAnimator.m in Sources */,
 				11356E1F1CF6CB4300CFA112 /* CustomTabBarAnimationDelegate.m in Sources */,
+				11356E281CF71BC600CFA112 /* CustomTabBarController.m in Sources */,
 				11356DF21CF6A90400CFA112 /* ViewController.m in Sources */,
 				11356DEF1CF6A90400CFA112 /* AppDelegate.m in Sources */,
 				11356DEC1CF6A90400CFA112 /* main.m in Sources */,
