@@ -49,7 +49,7 @@
         case UIGestureRecognizerStateCancelled:
         case UIGestureRecognizerStateEnded:
         {
-            if (precent > 0.5) {
+            if (precent >= 0.5) {
                 [customNavigationDelegate.interactiveTransition finishInteractiveTransition];
             }else {
                 [customNavigationDelegate.interactiveTransition cancelInteractiveTransition];

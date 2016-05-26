@@ -55,7 +55,7 @@
         
     }
     NSTimeInterval duration = [self transitionDuration:transitionContext];
-    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         if (self.isPresenting) {
             toView.alpha = 1;
             [toView setTransform:CGAffineTransformMakeRotation(0)];
