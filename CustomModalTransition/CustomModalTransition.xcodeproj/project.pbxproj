@@ -15,6 +15,10 @@
 		112E99FC1CF58FDF00E7ABD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112E99FA1CF58FDF00E7ABD3 /* LaunchScreen.storyboard */; };
 		112E9A071CF58FDF00E7ABD3 /* CustomModalTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E9A061CF58FDF00E7ABD3 /* CustomModalTransitionTests.m */; };
 		112E9A121CF58FDF00E7ABD3 /* CustomModalTransitionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E9A111CF58FDF00E7ABD3 /* CustomModalTransitionUITests.m */; };
+		112E9A221CF590E300E7ABD3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E9A201CF590E300E7ABD3 /* SecondViewController.m */; };
+		112E9A231CF590E300E7ABD3 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112E9A211CF590E300E7ABD3 /* SecondViewController.xib */; };
+		112E9A261CF591ED00E7ABD3 /* CustomTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E9A251CF591ED00E7ABD3 /* CustomTransitionDelegate.m */; };
+		112E9A291CF5930500E7ABD3 /* CustomAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 112E9A281CF5930500E7ABD3 /* CustomAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		112E9A0D1CF58FDF00E7ABD3 /* CustomModalTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomModalTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112E9A111CF58FDF00E7ABD3 /* CustomModalTransitionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomModalTransitionUITests.m; sourceTree = "<group>"; };
 		112E9A131CF58FDF00E7ABD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112E9A1F1CF590E300E7ABD3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		112E9A201CF590E300E7ABD3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		112E9A211CF590E300E7ABD3 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		112E9A241CF591ED00E7ABD3 /* CustomTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionDelegate.h; sourceTree = "<group>"; };
+		112E9A251CF591ED00E7ABD3 /* CustomTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionDelegate.m; sourceTree = "<group>"; };
+		112E9A271CF5930500E7ABD3 /* CustomAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimator.h; sourceTree = "<group>"; };
+		112E9A281CF5930500E7ABD3 /* CustomAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,13 @@
 				112E99F01CF58FDF00E7ABD3 /* AppDelegate.m */,
 				112E99F21CF58FDF00E7ABD3 /* ViewController.h */,
 				112E99F31CF58FDF00E7ABD3 /* ViewController.m */,
+				112E9A241CF591ED00E7ABD3 /* CustomTransitionDelegate.h */,
+				112E9A251CF591ED00E7ABD3 /* CustomTransitionDelegate.m */,
+				112E9A271CF5930500E7ABD3 /* CustomAnimator.h */,
+				112E9A281CF5930500E7ABD3 /* CustomAnimator.m */,
+				112E9A1F1CF590E300E7ABD3 /* SecondViewController.h */,
+				112E9A201CF590E300E7ABD3 /* SecondViewController.m */,
+				112E9A211CF590E300E7ABD3 /* SecondViewController.xib */,
 				112E99F51CF58FDF00E7ABD3 /* Main.storyboard */,
 				112E99F81CF58FDF00E7ABD3 /* Assets.xcassets */,
 				112E99FA1CF58FDF00E7ABD3 /* LaunchScreen.storyboard */,
@@ -243,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112E9A231CF590E300E7ABD3 /* SecondViewController.xib in Resources */,
 				112E99FC1CF58FDF00E7ABD3 /* LaunchScreen.storyboard in Resources */,
 				112E99F91CF58FDF00E7ABD3 /* Assets.xcassets in Resources */,
 				112E99F71CF58FDF00E7ABD3 /* Main.storyboard in Resources */,
@@ -270,9 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112E9A221CF590E300E7ABD3 /* SecondViewController.m in Sources */,
+				112E9A291CF5930500E7ABD3 /* CustomAnimator.m in Sources */,
 				112E99F41CF58FDF00E7ABD3 /* ViewController.m in Sources */,
 				112E99F11CF58FDF00E7ABD3 /* AppDelegate.m in Sources */,
 				112E99EE1CF58FDF00E7ABD3 /* main.m in Sources */,
+				112E9A261CF591ED00E7ABD3 /* CustomTransitionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +520,7 @@
 				112E9A181CF58FDF00E7ABD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		112E9A191CF58FDF00E7ABD3 /* Build configuration list for PBXNativeTarget "CustomModalTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +529,7 @@
 				112E9A1B1CF58FDF00E7ABD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		112E9A1C1CF58FDF00E7ABD3 /* Build configuration list for PBXNativeTarget "CustomModalTransitionUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +538,7 @@
 				112E9A1E1CF58FDF00E7ABD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
