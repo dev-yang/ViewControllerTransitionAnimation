@@ -52,6 +52,7 @@
         fromView.layer.position = CGPointMake(containerView.frame.size.width, 0);
         fromView.layer.anchorPoint = CGPointMake(1, 0);
         [containerView insertSubview:toView belowSubview:fromView];
+        
     }
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -66,13 +67,13 @@
 
     } completion:^(BOOL finished) {
         if (!self.isPresenting) {
-            [fromView
-             removeFromSuperview];
+            [fromView removeFromSuperview];
         }
         BOOL wasCancelled = [transitionContext transitionWasCancelled];
         [transitionContext completeTransition:!wasCancelled];
 
     }];
+    
 }
 - (void)animationEnded:(BOOL)transitionCompleted {
     NSLog(@"animationEnded!");
