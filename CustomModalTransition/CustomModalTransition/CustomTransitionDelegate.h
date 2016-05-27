@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface CustomTransitionDelegate : NSObject<UIViewControllerTransitioningDelegate, UIViewControllerInteractiveTransitioning>
-
+@interface CustomTransitionDelegate : NSObject<UIViewControllerTransitioningDelegate>
+@property (nonatomic, assign) BOOL isInteractive;
+@property (nonatomic, strong) UIPercentDrivenInteractiveTransition * interactiveTransition;
 @end

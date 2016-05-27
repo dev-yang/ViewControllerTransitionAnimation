@@ -13,6 +13,13 @@
 @end
 @implementation CustomTransitionDelegate
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.isInteractive = NO;
+        self.interactiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+    }
+    return self;
+}
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     return [[CustomAnimator alloc] initWithPresenting:YES];
 }
@@ -21,12 +28,20 @@
     return [[CustomAnimator alloc] initWithPresenting:NO];
 }
 
-//- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id<UIViewControllerAnimatedTransitioning>)animator {
-//    
-//}
-//
-//- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
-//    
-//}
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id<UIViewControllerAnimatedTransitioning>)animator {
+    if (self.isInteractive) {
+        return self.interactiveTransition;
+    }else {
+        return nil;
+    }
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
+    if (self.isInteractive) {
+        return self.interactiveTransition;
+    }else {
+        return nil;
+    }
+}
 
 @end

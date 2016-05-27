@@ -17,7 +17,7 @@
 }
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.7;
+    return 0.5;
 }
 
 
@@ -54,7 +54,7 @@
         [containerView insertSubview:toView belowSubview:fromView];
     }
     NSTimeInterval duration = [self transitionDuration:transitionContext];
-    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         if (self.isPresenting) {
             toView.alpha = 1;
             [toView setTransform:CGAffineTransformMakeRotation(0)];
@@ -65,11 +65,11 @@
         }
 
     } completion:^(BOOL finished) {
-        if (!self.isPresenting) {
+        BOOL wasCancelled = [transitionContext transitionWasCancelled];
+        if (!self.isPresenting && !wasCancelled) {
             [fromView
              removeFromSuperview];
         }
-        BOOL wasCancelled = [transitionContext transitionWasCancelled];
         [transitionContext completeTransition:!wasCancelled];
 
     }];
